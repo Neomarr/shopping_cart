@@ -1,0 +1,253 @@
+body {
+  background-color: #e8eef7;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.empty-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-card {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  min-width: 340px;
+  max-width: 460px;
+  width: 100%;
+}
+
+.empty-icon-wrap {
+  width: 85px;
+  height: 85px;
+  background: #dde8f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.4rem;
+}
+
+.empty-icon-wrap i {
+  font-size: 2.2rem;
+  color: #6b9fd4;
+}
+
+.empty-title {
+  font-weight: 700;
+  color: #1e2a3a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-subtitle {
+  color: #7a8fa6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+}
+
+.btn-start-shop {
+  background: #3b7fe8;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.65rem 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.btn-start-shop:hover {
+  background: #2d6fd4;
+  color: #fff;
+}
+
+/* ── Cart Page ── */
+.cart-wrapper {
+  min-height: 100vh;
+  padding: 2.5rem 1rem;
+}
+
+.page-title {
+  font-weight: 800;
+  color: #1e2a3a;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.item-count {
+  color: #7a8fa6;
+  font-size: 0.88rem;
+}
+
+.back-link {
+  color: #3b7fe8;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.back-link:hover {
+  color: #1e55c4;
+}
+
+/* ── Item Card ── */
+.item-card {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.item-img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.item-img-placeholder {
+  width: 76px;
+  height: 76px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-category {
+  color: #3b7fe8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #1e2a3a;
+  font-size: 0.95rem;
+}
+
+.item-price {
+  font-weight: 700;
+  color: #1e2a3a;
+  font-size: 1rem;
+}
+
+.price-each {
+  font-size: 0.78rem;
+  color: #8899aa;
+}
+
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid #d0dbe8;
+  border-radius: 50px;
+  overflow: hidden;
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  color: #3b7fe8;
+  font-size: 1.15rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+  line-height: 1;
+}
+
+.qty-btn:hover {
+  background: #edf2fb;
+}
+
+.qty-display {
+  min-width: 34px;
+  text-align: center;
+  font-weight: 600;
+  color: #1e2a3a;
+  font-size: 0.95rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.btn-remove {
+  background: none;
+  border: none;
+  color: #a0b4c8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.btn-remove:hover {
+  color: #e05c5c;
+}
+
+.total-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 1.3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.total-label {
+  color: #3b7fe8;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.total-amount {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1e2a3a;
+  line-height: 1;
+}
+
+.btn-continue {
+  color: #3b7fe8;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+}
+
+.btn-continue:hover {
+  color: #1e55c4;
+}

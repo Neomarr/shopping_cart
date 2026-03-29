@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cart-wrapper">
+    <div class="container" style="max-width: 760px;">
+      
+      <div class="mb-4">
+        <span class="back-link" style="visibility: hidden;">
+          <i class="bi bi-arrow-left"></i>
+        </span>
+        <h4 class="page-title">Shopping Cart</h4>
+        <span class="item-count">3 items</span>
+      </div>
+
+      <div class="item-card" id="item-1">
+        <div class="d-flex align-items-center gap-3">
+
+          <div class="item-img-placeholder" style="background: #2d3a5a;">
+          </div>
+
+          <div class="flex-grow-1">
+            <div class="item-category">Board Games</div>
+            <div class="item-name">Catan Base Game</div>
+            <div class="qty-stepper">
+              <button class="qty-btn" onclick="changeQty('item-1', -1)">−</button>
+              <span class="qty-display" id="qty-item-1">1</span>
+              <button class="qty-btn" onclick="changeQty('item-1', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="text-end d-flex flex-column align-items-end gap-2">
+            <button class="btn-remove" onclick="removeItem('item-1')" title="Remove item">
+              <i class="bi bi-trash3"></i>
+            </button>
+            <div class="item-price" id="price-item-1">$44.99</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="item-card" id="item-2">
+        <div class="d-flex align-items-center gap-3">
+
+          <div class="item-img-placeholder" style="background: #c0392b;">
+          </div>
+
+          <div class="flex-grow-1">
+            <div class="item-category">Trading Cards</div>
+            <div class="item-name">Pokémon Scarlet &amp; Violet Booster Box</div>
+            <div class="qty-stepper">
+              <button class="qty-btn" onclick="changeQty('item-2', -1)">−</button>
+              <span class="qty-display" id="qty-item-2">2</span>
+              <button class="qty-btn" onclick="changeQty('item-2', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="text-end d-flex flex-column align-items-end gap-2">
+            <button class="btn-remove" onclick="removeItem('item-2')" title="Remove item">
+              <i class="bi bi-trash3"></i>
+            </button>
+            <div class="item-price" id="price-item-2">$259.98</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="item-card" id="item-3">
+        <div class="d-flex align-items-center gap-3">
+
+          <div class="item-img-placeholder" style="background: #1a1a2e;">
+          </div>
+
+          <div class="flex-grow-1">
+            <div class="item-category">LEGO Sets</div>
+            <div class="item-name">LEGO Creator 3-in-1 Treehouse</div>
+            <div class="qty-stepper">
+              <button class="qty-btn" onclick="changeQty('item-3', -1)">−</button>
+              <span class="qty-display" id="qty-item-3">1</span>
+              <button class="qty-btn" onclick="changeQty('item-3', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="text-end d-flex flex-column align-items-end gap-2">
+            <button class="btn-remove" onclick="removeItem('item-3')" title="Remove item">
+              <i class="bi bi-trash3"></i>
+            </button>
+            <div class="item-price" id="price-item-3">$89.99</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="total-card">
+        <div>
+          <div class="total-label">Cart Total</div>
+          <div class="total-amount" id="cart-total">$394.96</div>
+        </div>
+        <span class="btn-continue" style="cursor: default;">
+          <i class="bi bi-arrow-left"></i> Continue Shopping
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
